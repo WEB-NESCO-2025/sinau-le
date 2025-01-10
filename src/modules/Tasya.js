@@ -10,40 +10,40 @@ export default function Tasya() {
   return (
     <>
       {/* Judul Section */}
-      <div className="flex min-h-[150vh] w-full flex-col items-center bg-white">
-        <div className="mt-[55px] font-piximisa text-[45px]">Tentang</div>
-        <div className="font-primeformRegular text-[50px]">Porsenigama 2024</div>
-        <div className="absolute left-[0px] top-[2290px]">
+      <div className="flex w-full flex-col items-center bg-white">
+        <div className="flex flex-col items-center justify-center space-x-4">
+          <div className="mt-[40px] font-piximisa text-[4vw]">Tentang</div>
+          <div className="font-primeformSemiBold text-[4vw]">PORSENIGAMA 2024</div>
           {/* komponen awan */}
-          <Image src="/images/awan1.png" width={150} height={200} alt="Picture of the author" />
+          <div className="absolute flex w-full flex-row items-center justify-between">
+            <Image src="/images/awan1.png" width={150} height={200} alt="Picture of the author" />
+            <Image src="/images/awan2.png" width={150} height={200} alt="Picture of the author" />
+          </div>
         </div>
-        <div className="absolute right-[0px] top-[2350px]">
-          <Image src="/images/awan2.png" width={150} height={200} alt="Picture of the author" />
-        </div>
+      </div>
 
-        {/* Teaser Porsenigama */}
-        <div className="relative mt-[50px] flex w-full justify-start pl-[200px]">
-          <div className="box-border h-[250px] w-[400px] rounded-[15px] border-[3px] border-black p-4" />
-          <div className="absolute left-[250px] top-[50px]">
+      {/* Teaser Porsenigama */}
+      <div className="flex w-full flex-col items-center justify-center">
+        <div className="relative flex flex-row items-start justify-center space-x-4">
+          {/* Box Youtube */}
+          <div className="relative h-auto w-[60%] rounded-2xl border-2 border-black bg-white p-[2%]">
             <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/unroADBN_cg"
-              title="YouTube video"
+              className="z-20 mx-auto aspect-video w-full rounded-xl"
+              src="https://www.youtube.com/embed/unroADBN_cg?si=M7NF-Nv17fqGg3nb"
+              loading="lazy"
+              title="Porsenigama 2024"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
-          </div>
-          <div className="absolute left-[90px] top-[150px]">
-            {/* Komponen catur & tenis */}
-            <Image src="/images/tenis.png" width={200} height={250} alt="Picture of the author" />
-          </div>
-          <div className="absolute left-[500px] top-[180px]">
-            <Image src="/images/catur1.png" width={150} height={200} alt="Picture of the author" />
-          </div>
 
+            {/* Gambar Tenis dan Catur */}
+            <div className="absolute left-[-100px] top-[160px] z-10 flex flex-row gap-x-[230px]">
+              <Image src="/images/tenis.png" width={200} height={200} alt="Gambar tenis" />
+              <Image src="/images/catur1.png" width={150} height={100} alt="Gambar catur" />
+            </div>
+          </div>
           {/* Deskripsi Porsenigama */}
-          <div className="ml-[100px] box-border flex h-[350px] w-[400px] justify-center bg-white p-4">
+          <div className="ml-[100px] box-border flex h-[350px] w-[500px] justify-center bg-white p-4">
             <p className="text-justify font-primeformRegular text-[18px] text-black">
               Pekan Olahraga dan Seni Universitas Gadjah Mada (Porsenigama) adalah ajang olahraga
               dan seni tahunan yang melibatkan kontingen dari berbagai Fakultas dan Sekolah di UGM.
@@ -55,13 +55,27 @@ export default function Tasya() {
             </p>
           </div>
         </div>
+      </div>
 
-        {/* Kontingen & Supporter */}
-        <div className="absolute left-[150px] top-[2900px]">
-          <Image src="/images/kontingen.png" width={450} height={500} alt="Picture of the author" />
+      {/* Kontingen & Supporter */}
+      <div className="mt-[50px] flex flex-row items-center justify-center space-x-[50px]">
+        <div className="w-[40vw]">
+          <Image
+            src="/images/kontingen.png"
+            alt="Picture of the author"
+            layout="responsive"
+            width={100}
+            height={100}
+          />
         </div>
-        <div className="absolute left-[700px] top-[2900px]">
-          <Image src="/images/supporter.png" width={450} height={500} alt="Picture of the author" />
+        <div className="w-[40vw]">
+          <Image
+            src="/images/supporter.png"
+            alt="Picture of the author"
+            layout="responsive"
+            width={100}
+            height={100}
+          />
         </div>
       </div>
     </>
