@@ -37,7 +37,6 @@ export default function Tasya() {
       {/* Teaser Porsenigama */}
       <div className="flex w-full flex-col items-center justify-center">
         <div className="relative flex flex-col items-center justify-center space-x-4 md:flex-row lg:flex-row">
-          {/* Youtube */}
           <div className="relative h-auto w-[70%] rounded-2xl border-2 border-black bg-white p-[2%] md:w-[50%] lg:w-[50%]">
             <iframe
               className="z-20 mx-auto aspect-video w-full rounded-xl"
